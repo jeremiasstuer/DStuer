@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.fondo-azul{
+    background-color: #041933;
+}
+/*---------------------------menu------------------*/
+
+nav {
+    width: 100%;
+    background: #021222;
+    opacity: 50%;
+    height: 80px;
+    position: fixed;
+    z-index: 101;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    line-height: 80px;
+    z-index: 100;
+}
+
+.container-logo {
+    margin-left: 20px;
+    z-index: 100;
+    cursor:default;
+}
+
+.container-logo h2 {
+    color: #95bdd8   ;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.container-logo h2 span {
+    color: #0590ec;
+    font-weight: 700;
+}
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: #d1faf4;
+    font-size: 20px;
+    margin: 0 25px;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+.links .link a:hover {
+    color: #487abb;
+}
+
+.toggle {
+    color: #d1faf4;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+    
+}
+
+.rotate {
+    transform: rotate(180deg);
+    
+}
+
+/*------------------------Info--------------------*/
+
+.contenedor-info{
+    clip-path: polygon(0 0, 87% 0, 100% 0, 100% 70%, 100% 70%, 50% 100%, 0 70%, 0% 70%, 0 0, 0 0);
+    display: flex;
+    justify-content: center;
+    flex-flow:column ;
+    align-items: center;
+    background-image: url("../img/moon-light-shine-through-the-window-into-islamic-mosque-interior.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    animation: movimiento 5s infinite;
+}
+@keyframes movimiento{
+    0%{ 
+        filter: saturate(50%);
+    }50%{
+        filter: saturate(100%);
+    }100%{
+        filter: saturate(50%);
+    }
+}
+
+.contenidos{
+    text-align: center;
+    padding: 0 30px;
+    
+}
+.contenidos h1{
+    font-family: 'Lora', serif;
+    font-size: 60px;
+}
+.contenidos p{
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    width: 200px;
+}
+/*-------------------info-cartas-------------*/
+.explicacion{
+
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #d1faf4;
+
+}
+
+.explicacion h3{
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    margin:20px 0 30px 0;
+    text-align: center;
+}
+
+.cont-exp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exp-img{
+    text-align: center;
+    width: 90px;
+}
+
+.exp-img img{  
+    
+    width: 90px;
+    
+}
+
+.explicacion-p{
+    width: 60vh;
+}
+#textBtn{
+    margin-bottom: 7px;
+}
+
+.flecha-abajo{
+    margin: 50px 0 30px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*-----------------Cartas--------------------*/
+.hidden-cartas{
+    display: none;
+}
+
+.section-cartas{
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding-top:40px;
+}
+
+.cont-cartas1{
+
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas1:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/Justice.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas2{
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas2:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/KingOfRings.jpg');
+    background-size:100% 100%;
+}
+
+
+.cont-cartas3{
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas3:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/PageOfRing.jpg');
+    background-size:100% 100%;
+}
+
+
+.cont-cartas4{
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas4:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/SixOfRings.jpg');
+    background-size:100% 100%;
+}
+
+
+.cont-cartas5{
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas5:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/TheHighPriestess.jpg');
+	background-size:100% 100%;
+}
+
+.cont-cartas6{
+    display:inline-block;
+    border-radius: 20px;
+    margin: 30px;
+    width: 200px;
+    height: 300px;
+    background-image: url('../img/Tapa.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.cont-cartas6:hover{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/TheLovers.jpg');
+    background-size:100% 100%;
+}
+/*------------------Personas---------------------------*/
+.cont-tarotistas{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#c6d6ec;
+    width: 100%;
+    height: auto;
+    padding: 70px 0 70px 0;
+    text-align: center;
+}
+.nombre-tarot{
+    font-family: 'lora', serif;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.cont-tarotistas  li{
+    list-style: none;
+}
+.img-persona{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+/*------------------Compras----------------------*/
+.gris{
+    background-color: rgb(209, 209, 209);
+}
+.fondo-tb{
+    background-color: #041933;
+}
+.fondoClaro-tb{
+    background-color: #0590ec;
+}
+.grosor-tb{
+    font-weight: bold;
+}
+.color-tb{
+    color:#041933;
+}
+.colorClaro-tb{
+    color: #0590ec;
+}
+.comprar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/moon-light-shine-through-the-window-into-islamic-mosque-interior.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    animation: movimiento 5s infinite;
+    width: 100%;
+    height: auto;
+}
+
+table{
+    width: 200px;
+    height: 300px;
+    margin:40px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+table:hover{
+    width: 210px;
+    height: 310px;
+}
+.link-table{
+    width: 100%;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+/*---------------Contacto------------------------------*/
+
+.contacto{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+.contacto h4{
+    font-size: 20px;
+    color: #d1faf4;
+}
+.cont-redes{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.redes-sociales{
+    font-size:40px;
+}
+.redes-sociales a{
+    text-decoration: none;
+    color:#d1faf4;
+    padding: 20px;
+}
+/*-------------------------footer-form------------------------------*/
+
+form{
+    display: flex;
+    flex-flow: column;
+    background:rgb(79, 104, 156,.2);
+    border-radius: 10px;
+    border:1px solid black;
+    width: 45vh;
+    height: auto;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    color: #d1faf4;
+}
+
+form .form-titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #487abb;
+}
+
+form .form-titulo span{
+    color: #95bdd8;
+}
+
+form label{
+    font-size: 14px;
+}
+
+form input , textarea{
+    background:rgba(149, 189, 216) ;
+    height: 20px;
+    border: none;
+    border-radius: 6px;
+}
+.margin-bot{
+    margin-bottom: 15px;
+}
+
+#form p{
+    font-size: 13px;
+    color: #487abb;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+
+form textarea{
+    width: 100%;
+    height: 60px;
+    resize: none;
+}
+
+.btn{
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: 5ms;
+    width: 62%;
+    height: 33px;
+    color: aliceblue;
+}
+
+.borde-error{
+    border: 3px solid rgb(155, 71, 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .opacidad{
+        opacity: 100%;
+    }
+    .toggle {
+        display: inline;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #021222;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: 1;
+        top: -100vh;
+        transition: .5s;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .links .link:hover {
+        background: #041933;
+    }
+    
+
+
+    
+.cont-cartas1{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/Justice.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas2{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/KingOfRings.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas3{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/PageOfRing.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas4{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/SixOfRings.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas5{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/TheHighPriestess.jpg');
+    background-size:100% 100%;
+}
+
+.cont-cartas6{
+    transition: 2s;
+    -webkit-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    -moz-box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    box-shadow: 22px 24px 61px -28px rgba(238,240,175,1);
+    background-image: url('../img/TheLovers.jpg');
+    background-size:100% 100%;
+}
+};

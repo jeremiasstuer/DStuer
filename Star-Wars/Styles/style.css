@@ -1,0 +1,290 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-image: url(../Images/star-wars-backgrounds-25_bc15ec98.jpeg);
+    
+  }
+
+.speaker{
+    display: flex;
+    height: 25px;
+    margin-right: 15px;
+    padding: 0px;
+  }
+
+  .logo-star{
+    display: flex;
+    height: 35px;
+    margin-right: 15px;
+    padding: 0px;
+    pointer-events: none;
+  }
+  
+ .headerImage {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  
+  
+  
+  
+    
+  
+  .flex-container-asides{
+    
+    display: flex ;
+    justify-content:space-around;
+    flex-flow:row nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+
+  aside{
+    word-wrap: break-word;
+    width: 30%;
+    height: 70vh;
+    font-size: 15px;
+    
+  }
+  
+  .aside-left {
+    padding: 10px;
+    background-image: url(../Images/flota-revelde.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(194, 192, 78);
+    text-align: center;
+  }
+
+    .aside-right{
+    background-image: url(../Images/flota-imperial.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 55, 0);
+    text-align: center;
+    text-size-adjust: 1;
+  }
+  
+  
+   
+
+  .wrap{
+    display: flex;
+    align-items: flex-start;
+    width:80vmin; height:80vmin;
+    margin-top: -30px;
+    transform:scale(0.2) translatez(0px);
+    transition:transform .5s, opacity .5s;
+    transform:scale(.8);
+    opacity:1;
+    max-width: 100%;
+    
+  }
+  
+  div div div a {
+    position:absolute;
+    left:0; top: 5px;;
+    width:47.5%; height:47.5%;
+    background:#888888;
+  }
+  
+  div div div a div{
+    height:100%;
+    background-size:cover;
+    opacity:.5;
+    transition:opacity .5s;
+    border-radius:inherit;
+  }
+  
+  div div div a:nth-child(1) {
+    border-radius:40vmin 0 0 0;
+    transform-origin: 110% 110%;
+    transition:transform .4s .15s;
+    background:#888888
+  }
+  
+  div div div a:nth-child(1) div{
+    background-image:url(../Images/luke2.jpg);
+  }
+  
+  div div div a:nth-child(2){
+    border-radius:0 40vmin 0 0;
+    left:52.5%;
+    transform-origin: -10% 110%;
+    transition:transform .4s .2s;
+    background:#888888
+  }
+  
+  div div div a:nth-child(2) div{
+    background-image:url(../Images/Darth\ Vader-1.jpg);
+  }
+  
+  div div div a:nth-child(3){
+    border-radius:0 0 0 40vmin;
+    top:52.5%;
+    transform-origin: 110% -10%;
+    transition:transform .4s .25s;
+    background:#888888
+  }
+  
+  div div div a:nth-child(3) div{
+    background-image:url(../Images/star-wars-yoda-1024x768-video-games-star-wars-hd-art-wallpaper-preview.jpg);
+  }
+  
+  div div div a:nth-child(4){
+    border-radius:0 0 40vmin 0;
+    top:52.5%; left:52.5%;
+    transform-origin: -10% -10%;
+    transition:transform .4s .3s;
+  }
+  
+  div div div a:nth-child(4) div{
+    background-image: url(../Images/descarga.jpg);
+  }
+  
+  div div div a:nth-child(5){
+    width:55%;height:55%;
+    left:22.5%; top:22.5%;
+    border-radius:50vmin;
+    box-shadow:0 0 0 1vmin #050505;
+    background:#888888
+  }
+  
+  div div div a:nth-child(5) div{
+    background-image: url(../Images/pngwing.com.png);
+  }
+  
+  
+  .wrap a{
+    transform:scale(1);
+  }
+  
+  div div a:hover div{
+    opacity:1;
+  }
+  
+  
+  
+  
+  
+  footer {
+      position:relative;
+      z-index: 0;
+      height:30px;
+      width:100%;
+      background:#999;
+   }
+  
+   .hideBtn {
+      opacity:0
+  }
+  
+  #saludo{
+    font-size: larger;
+    color: aliceblue;
+    font-weight: bold;
+  }
+  
+   .videoAnimation {
+    display: none;
+   }
+   
+
+   
+
+
+
+footer {
+  
+background: none;
+color: #868c96;
+}
+
+footer p {
+padding: 40px 0;
+text-align: center;
+}
+
+footer img {
+width: 70px;
+}
+
+   @media screen and (max-width: 720px) {
+
+    .headerImage img{
+      width: 100%;
+    }
+
+      .flex-container-asides{
+       
+          display: flex;
+          flex-flow:column wrap;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          margin-bottom: 15px;
+        }
+    aside {
+      width: 90%;
+      height: 50px;
+      
+      margin: auto;
+      }
+    
+       .container-aside{
+  
+        width: 100%;
+        height: 100px;
+        min-height: 100px;
+        
+      }
+        
+       .aside-left{
+        width: 90%;
+        height: 100px;
+        max-height: 100px;
+        overflow:scroll
+       }
+       .aside-right{
+        width: 90%;
+        height: 100px;
+        max-height: 100px;
+        overflow:scroll
+       }
+       
+       .wrap{
+        margin: 0;
+        padding: 0;
+        
+       }    
+       .headerImage{
+        max-width: 100%;
+       }
+       
+    
+      }          
+      
+    

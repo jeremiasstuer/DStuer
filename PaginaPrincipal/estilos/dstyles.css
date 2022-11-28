@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 233, 233);
+    color: black;
+    width: 100%;
+    height: 50px;
+}
+.menu-img{
+    margin-left: 10px;
+}
+
+.menu-cono{
+    margin-right: 20px;
+}
+
+.btn-nav{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(235, 233, 233);
+    border-top: 1px solid black;
+    text-align: center;
+    color: red;
+}
+.btn-nav p{
+    font-size: bold;
+    font-size: 40px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+
+
+.seccion-oculta{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: 88.6vh;
+    background-image: url("../img/pexels-veeterzy-303383.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.seccion-oculta h1{
+    margin: 130px 0 40px 0;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.dstuer{
+    font-family: 'lora',serif;
+}
+.D{
+    font-size: 60px;
+}
+.seccion-oculta p{
+    font-size: 19px;
+    text-align: center;
+    width: 50%;
+    height: 70px;
+    color: aliceblue;
+}
+
+.contacto{
+    background-color:rgba(36, 26, 12, 0.521) ;
+    
+    margin-top: 100px;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.contacto a{
+    text-decoration: none;
+    color: white;
+}
+
+.contacto:hover{
+    width: 110px;
+    height: 35px ;
+    color: whitesmoke;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+.section-flex{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: row wrap;
+    text-align: center;
+    background-color:black;
+}
+
+.section-flex button{
+    width: 50%;
+}
+.cont-imgUno{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    margin: 1px;
+    height: 88vh;
+    background-image: url("../img/moon-light-shine-through-the-window-into-islamic-mosque-interior.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.cont-imgUno h2{
+    font-family: lora,self ;
+     color: black;
+}
+
+.cont-imgUno:hover{
+    animation: masluz 5s infinite;
+}
+@keyframes masluz{
+    0%{ 
+        filter: saturate(50%);
+    }50%{
+        filter: saturate(100%);
+    }100%{
+        filter: saturate(50%);
+    }
+}
+
+/*----------------Star Wars---------------------*/
+.cont-imgDos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    margin: 1px;
+    height: 88vh;
+    background-image: url("../img/star-wars.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+}
+
+.cont-imgDos:hover{
+    animation: movimiento 10s infinite linear alternate;
+}
+
+@keyframes movimiento {
+    from {
+      background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+  }
+
+
+
+/*-----------------DcGym----------------------------*/
+.cont-imgTres{
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    margin: 1px;
+    height: 88vh;
+    background-image: url("../img/HERO.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.cont-imgTres:hover .animacion{
+    animation: smoky 5s infinite linear;
+}
+
+@keyframes smoky {
+    60% {
+      text-shadow: 0 0 40px whitesmoke;
+    }
+    to {
+      text-shadow: 0 0 20px whitesmoke;
+      opacity: 0;
+    }
+  }
+
+.Dc{
+    color:rgb(0, 177, 169) ;
+}
+/*-----------------------------------*/
+
+.titulo-proyecto{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+
+.button-85 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+}
+
+.button-85 { 
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    background: #222; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 0; 
+    border-radius: 10px;
+    user-select: none; 
+    touch-action: manipulation; 
+} 
+.button-85:before { 
+    content: ""; 
+    background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000 ); 
+    position: absolute; 
+    top: -2px; 
+    left: -2px; 
+    background-size: 400%; 
+    z-index: -1; 
+    filter: blur(5px); 
+    width: calc(100% + 4px); 
+    height: calc(100% + 4px); 
+    animation: glowing-button-85 20s linear infinite; 
+    transition: opacity 0.3s ease-in-out; 
+    border-radius: 10px; 
+} 
+
+    @keyframes glowing-button-85 { 
+        0% { background-position: 0 0; } 
+        50% { background-position: 400% 0; } 
+        100% { background-position: 0 0; }
+     } 
+        .button-85:after { 
+            z-index: -1; 
+            content: ""; 
+            position: absolute; 
+            width: 100%; 
+            height: 100%; 
+            background: #222; 
+            left: 0; 
+            top: 0; 
+            border-radius: 10px;
+         }
+
+
+
+@media screen and (max-width: 599px ) {
+    
+
+    .seccion-oculta{
+        position: relative;
+    }
+    .contacto{
+        margin-top: 200px;
+    }
+    .section-flex{
+        padding-top: 20px;
+    }
+
+    .cont-imgUno, .cont-imgDos, .cont-imgTres{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .cont-imgUno{
+        animation: masluz 5s infinite;
+    }
+    .cont-imgDos{
+        animation: movimiento 10s infinite linear alternate;
+    }
+    .cont-imgTres .animacion{
+        animation: smoky 5s infinite linear;
+    }
+}

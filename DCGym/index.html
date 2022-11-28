@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Presentacion</title>
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <P class="Logo"><span class="spandc">DC</span>Gym</P>
+            <nav>
+                <a href="#sec2">Quienes somos</a>
+                <a href="#sec3">Nuestras clases</a>
+                <a href="#sec4">Contactanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sec1">
+        <h1>
+        <span class="spandc">DC</span>Gym
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur reprehenderit, quae nihil ipsam ut dolores esse possimus, numquam, minima libero aliquam ratione repellendus optio debitis beatae. Dicta ipsum quidem incidunt.</p>
+        <span class="hide" id="hidetext">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam accusantium, at nam recusandae voluptate nulla autem quas ex dolores quae ratione debitis mollitia saepe earum repellendus consequuntur odio doloremque fuga.</p>
+        </span>
+        <button id="hidetextbtn">Leer más!</button>
+    </section>
+    <section id="sec2">
+        <div class="conteiner">
+            <div class="image-conteiner"></div>
+            <div class="text">
+            <h2>Somos  <span class="spandc">DC</span>Gym!</h2>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum eaque voluptatibus quas? Aliquam voluptate delectus unde et id, cumque provident assumenda neque quas consectetur? Maiores at quidem saepe debitis!</P>
+        </div>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="conteiner">
+        <h3>Nuestras clases</h2>
+            <div class="cartas">
+                <div class="carta">
+                    <h3>Pilates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur sapiente dolore, nemo dolor rem ipsam magni voluptatem, temporibus error praesentium eaque fugit aliquam quis a ratione. Ea, perspiciatis culpa</p>
+                    <button>Inscribete!</button>
+                </div>
+                <div class="carta">
+                    <h3>CrossFit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur sapiente dolore, nemo dolor rem ipsam magni voluptatem, temporibus error praesentium eaque fugit aliquam quis a ratione. Ea, perspiciatis culpa!</p>
+                    <button>Inscribete!</button>
+                </div>
+                <div class="carta">
+                    <h3>Funcional</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur sapiente dolore, nemo dolor rem ipsam magni voluptatem, temporibus error praesentium eaque fugit aliquam quis a ratione. Ea, perspiciatis culpa!</p>
+                    <button>Inscribete!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="conteinerForm">
+            <form class="form" id="form">
+                    <h2 class="formtitl">Contactanos</h2>
+                    <p class="formp">Para mas info deja tus datos!</p>
+                    <div class="conteiner2">
+                        <div class="form-grupo">
+                            <input type="text" id="nombre" class="forminput" placeholder=" " >
+                            <label for="nombre" class="formlabel">Nombre</label>
+                            <span class="formline"></span>
+
+                        </div>
+                        <div class="form-grupo">
+                            <input type="text" id="apellido" class="forminput" placeholder=" ">
+                            <label for="apellido" class="formlabel">Apellido</label>
+                            <span class="formline"></span>
+
+                        </div>
+                        <div class="form-grupo">
+                            <input type="text" id="email" class="forminput" placeholder=" ">
+                            <label for="email" class="formlabel">Email</label>
+                            <span class="formline"></span>
+
+                         </div>
+                        <input type="submit" class="formsubmit" value="Enviar" id="submit">
+                    </div>  
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="conteiner">
+            <p>&copy;DCGym 2022
+            </p>
+        </div>
+    </footer>
+    <script src="./src/dist/index.js"></script>
+</body>
+</html>

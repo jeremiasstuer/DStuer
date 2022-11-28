@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot</title>
+    <link rel="stylesheet" href="./estilos/stylesTarot.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body class="fondo-azul">
+    <header id="inicio">
+        <nav class="opacidad">
+            <div class="container">
+                <div class="container-logo">
+                     <h2><span>J</span>Stuer<span>.</span></h2>
+                </div>
+
+                <ul class="links ">
+                    <li class="link"><a href="#inicio">Inicio</a></li>
+                    <li class="link"><a href="./cartas.html">Cartas</a></li>
+                    <li class="link"><a href="#tarotistas">Tarotistas</a></li>
+                    <li class="link"><a href="#comprar">Comprar</a></li>
+                    <li class="link"><a href="#Consultas">Consultas</a></li>
+                </ul>
+
+                <div class="toggle">
+                 |||
+                </div>
+            </div>
+        </nav>
+        <div class="contenedor-info">
+            <div class="contenidos">
+                <h1>Tarot</h1>
+            </div>
+            <div class="contenidos">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis.</p>
+            </div>
+        </div>
+    </header>
+    <section class="explicacion">
+        <div>
+            <h3>¿Cómo se realiza la cartomancia?</h3>
+        </div>
+            <div class="cont-exp">
+                <div class="exp-img">
+                    <img src="./img/sol.png" alt="">
+                </div>
+                <p class="explicacion-p">Existen muchos tipos de cartas en el Tarot. Lo que sí que tienen en común todas las barajas de Tarot es que están formadas por arcanos mayores y arcanos menores. Los arcanos menores reflejan pequeños problemas típicos de la vida diaria. Mientras que los arcanos mayores representan energías fuertes a largo plazo o algún acontecimiento importante en la vida.</p>
+            </div>
+        <div class="flecha-abajo">
+            <p id="textBtn">Conoce las cartas</p>
+            <img  src="./img/flecha.png" alt="">
+        </div>
+    </section>
+    <section class="hidden-cartas">
+        <article id="cartas" class="section-cartas">
+            <a href="cartas.html#justice"><div id="carta"class="cont-cartas1 "></div></a>
+            <a href="cartas.html#kingOfRings"><div id="carta"class="cont-cartas2 "></div></a>
+            <a href="cartas.html#pageOfKings"><div id="carta"class="cont-cartas3 "></div></a>
+            <a href="cartas.html#sixOfRings"><div id="carta"class="cont-cartas4 "></div></a>  
+            <a href="cartas.html#theLovers"><div id="carta"class="cont-cartas5 "></div></a>  
+            <a href="cartas.html#theHighPriestess"><div id="carta"class="cont-cartas6 "></div></a>  
+        </article>
+    </section>
+    <section id="tarotistas" class="cont-tarotistas">
+        <div>
+            <div>
+                <img class="img-persona" src="./img/persona1.jpg" alt="">
+            </div>
+            <h5 class="nombre-tarot">Nombre Persona</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <img class="img-persona" src="./img/persona2.jpg" alt="">
+            </div>
+            <h5 class="nombre-tarot">Nombre Persona</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="comprar" class="comprar fondo-azul">
+        <table>
+            <tr >
+               <td class="grosor-tb color-tb">BASICO</td> 
+            </tr>
+            <tr>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td class="gris">Lectura de Cartas</td>
+            </tr>
+            <tr>
+                <td>1 Persona</td>
+            </tr>
+            <tr class="fondo-tb ">
+                <td ><a class="link-table" href="#">Comprar </a></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+               <td class="grosor-tb colorClaro-tb">ESTANDAR</td> 
+            </tr>
+            <tr>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td class="gris">Lectura de Cartas</td>
+            </tr>
+            <tr>
+                <td>2 Personas</td>
+            </tr>
+            <tr class="fondoClaro-tb">
+                <td><a class="link-table" href="#">Comprar </a></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+               <td class="grosor-tb color-tb">PREMIUM</td> 
+            </tr>
+            <tr>
+                <td>$80</td>
+            </tr>
+            <tr class="gris">
+                <td>Lectura de Cartas</td>
+            </tr>
+            <tr>
+                <td>Desde casa</td>
+            </tr>
+            <tr class="fondo-tb">
+                <td><a class="link-table" href="#">Comprar </a></td>
+            </tr>
+        </table>
+    </section>
+    <footer  class="contacto" id="contacto">
+        <div class="cont-redes">
+            <div>
+                <h4>Seguime</h4>
+            </div>
+            <div class="redes-sociales">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+            <form  id="form"  name="formDatosPersonales">
+                <div class="form-titulo">
+                    <h4>C<span>onsultas</span></h4>
+                </div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" id="nombre" placeholder=" Escribe tu nombre"/>
+                <p id="errorName"></p>
+
+                <label for="email" >Email*</label>
+                <input type="email" name="email" id="email" placeholder=" Email"  />
+                <p id="errorEmail"></p>
+
+                <label  for="asunto">Asunto</label>
+                <input class="margin-bot" type ="text" name="asunto" id="asunto" placeholder=" Asunto"/>
+            
+                <label  for="mensaje">Mensaje</label>
+                <textarea class="margin-bot" id="textArea" name="mensaje" for="mensaje" placeholder=" Deje su consulta..." maxlength="300"></textarea>
+
+                <input class="btn" id="btnForm" type="submit" name="enviar"/>
+            </form>
+    </footer>
+    <script src="./script/tarotmain.js"></script>
+</body>
+</html>

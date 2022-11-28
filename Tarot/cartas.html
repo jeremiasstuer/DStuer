@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/stylesCartas.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body class="fondo-azul">
+    <header id="inicio">
+        <nav class="opacidad">
+            <div class="container">
+                <div class="container-logo">
+                     <a href="tarot.html"><h2><span>J</span>Stuer<span>.</span></h2></a>
+                </div>
+
+                <ul class="links ">
+                    <li class="link"><a href="tarot.html">Inicio</a></li>
+                    <li class="link"><a href="#cartas">Cartas</a></li>
+                    <li class="link"><a href="#consulta">Consultas</a></li>
+                </ul>
+
+                <div class="toggle">
+                 |||
+                </div>
+            </div>
+        </nav>
+        <div class="contenedor-info">
+            <div class="contenidos">
+                <h1>Tarot</h1>
+            </div>
+            <div class="contenidos">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, omnis.</p>
+            </div>
+        </div>
+    </header>
+    <section >
+        <h5 class="titulo-h5">Conoce las cartas y sus  significado</h5>
+        <div id="cartas" class="contenedor-carta">
+            <div id="justice" class="cards">
+                <img class="img-carta" src="./img/Justice.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>Justice</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div>   
+            <div id="kingOfRings" class="cards">
+                <img class="img-carta" src="./img/KingOfRings.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>King Of Rings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div> 
+            <div id="pageOfRing" class="cards">
+                <img class="img-carta" src="./img/PageOfRing.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>Page Of Ring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div> 
+            <div id="sixOfRings" class="cards">
+                <img class="img-carta" src="./img/SixOfRings.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>Six Of Rings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div> 
+            <div id="theHighPriestess" class="cards">
+                <img class="img-carta" src="./img/TheHighPriestess.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>The High Priestess</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div> 
+            <div id="theLovers" class="cards">
+                <img class="img-carta" src="./img/TheLovers.jpg" alt="">
+                <div class="contenedor-pCarta">
+                    <h3>The Lovers</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa error praesentium cupiditate  corrupti ab, quas placeat harum iusto eius numquam? </p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <footer  class="contacto" id="consulta">
+        <div class="cont-redes">
+            <div>
+                <h4>Seguime</h4>
+            </div>
+            <div class="redes-sociales">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+            <form  id="form"  name="formDatosPersonales">
+                <div class="form-titulo">
+                    <h4>C<span>onsultas</span></h4>
+                </div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" id="nombre" placeholder=" Escribe tu nombre"/>
+                <p id="errorName"></p>
+
+                <label for="email" >Email*</label>
+                <input type="email" name="email" id="email" placeholder=" Email"  />
+                <p id="errorEmail"></p>
+
+                <label  for="asunto">Asunto</label>
+                <input class="margin-bot" type ="text" name="asunto" id="asunto" placeholder=" Asunto"/>
+            
+                <label  for="mensaje">Mensaje</label>
+                <textarea class="margin-bot" id="textArea" name="mensaje" for="mensaje" placeholder=" Deje su consulta..." maxlength="300"></textarea>
+
+                <input class="btn" id="btnForm" type="submit" name="enviar"/>
+            </form>
+    </footer>
+    <script src="./script/tarotmain.js"></script>
+</body>
+</html>

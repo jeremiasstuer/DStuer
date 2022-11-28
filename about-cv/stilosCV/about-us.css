@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/*--------Header-------*/
+
+header{
+  background-color: rgb(235, 233, 233);
+
+}
+  
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 100%;
+  height: 60px;
+}
+
+.dstuer{
+  font-family: 'lora',serif;
+}
+.D{
+  font-size: 60px;
+}
+
+.about-section p{
+  font-size: 19px;
+  text-align: center;
+  width: 600px;
+  height: 70px;
+  color: aliceblue;
+}
+
+.contacto{
+  background-color:rgba(36, 26, 12, 0.521) ;
+  margin-top: 100px;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.contacto a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+/*-------   section cv ---------*/
+  .section-cv{
+    background-color: rgb(235, 233, 233);
+
+  }
+  .section-cv h2{
+    font-family: "lora", self;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .row{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .column {
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+  }
+  
+  .card {
+    background-color: #aeaeae;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .card img{
+    width: 100%;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img-cv/pexels-veeterzy-303383.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: aliceblue;
+  }
+  
+  .container {
+    width: 100%;
+    text-align: center;
+    padding: 0 16px;
+    color: aliceblue;
+  }
+  
+  .title {
+    padding-top: 10px;
+    color: grey;
+  }
+  
+  .button {
+    
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 0 10px 0;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .button a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
