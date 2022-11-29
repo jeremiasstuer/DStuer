@@ -51,6 +51,6 @@ function handleSubmit(e) {
         paraEmail.innerHTML = "El E-mail es invalido";
     }
     if (name !== "" && apellido !== "" && regexMail.test(email.value)) {
-        window.location.assign("http://127.0.0.1:3000/index.html");
+        window.location.assign("http://127.0.0.1:3000/Star-Wars/index.html");
     }
 }

@@ -1,7 +1,7 @@
 
 // Read more & Read less //
 
-const hidetextbtns = document.getElementById("hidetextbtn");
+const hidetextbtns = document.getElementById("hidetextbtn") as HTMLButtonElement;
 const hidetext = document.getElementById("hidetext");
 
 hidetextbtns?.addEventListener(`click`, toggleText);
@@ -10,10 +10,10 @@ function toggleText(){
     hidetext?.classList.toggle(`show`);
 
     if(hidetext?.classList.contains(`show`)){
-        hidetextbtns?.innerHTML = `Leer menos!`;
+        hidetextbtns.innerHTML = `Leer menos!`;
     }
     else {
-        hidetextbtns?.innerHTML = `Leer más!`
+        hidetextbtns.innerHTML = `Leer más!`
     }
 }
 
